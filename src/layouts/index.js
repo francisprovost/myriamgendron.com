@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import './index.css'
+import Menu from '../components/Menu'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -14,7 +15,6 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header />
     <div
       style={{
         margin: '0 auto',
@@ -23,6 +23,8 @@ const TemplateWrapper = ({ children }) => (
         paddingTop: 0,
       }}
     >
+      <Header />
+      <Menu />
       {children()}
     </div>
   </div>
