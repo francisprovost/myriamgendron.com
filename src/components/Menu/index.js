@@ -1,19 +1,20 @@
 import React from 'react'
 import MenuItem from './MenuItem'
+import styled from 'styled-components'
+
+const MenuWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`
 
 const Menu = () => {
   return (
-    <div
-      style={{
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'space-between',
-      }}
-    >
+    <MenuWrapper>
       <MenuItem label="Biographie" />
       <MenuItem label="Services" />
       <MenuItem label="Conteact" />
-    </div>
+    </MenuWrapper>
   )
 }
 

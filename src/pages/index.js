@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import ContentSection from '../components/ContentSection'
+import Who from '../components/sections/Who'
 
 const IndexPage = () => (
   <div>
     <ContentSection title="Qui suis-je">
-      <p>Some content</p>
+      <Who />
     </ContentSection>
   </div>
 )
